@@ -9,7 +9,7 @@ router.post("/register", upload.single("userImage"), userController.register);
 router.post("/login", userController.login);
 
 //Profile
-router.get("/getUserInfo", auth, userController.getUserInfo);
+router.get("/getUserInfo", auth, userController.getUserInfo);git push -u origin main
 router.put('/updateProfile', auth, upload.single("userImage"), userController.updateProfile)
 
 // Lists
